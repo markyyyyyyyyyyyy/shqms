@@ -1,0 +1,6 @@
+cmd
+npm install react-easy-crop chart.js react-chartjs-2 date-fns
+npm run dev
+
+in .env file:
+VITE_API_BASE_URL=http://127.0.0.1:8000/api
