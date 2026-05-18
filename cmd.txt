@@ -2,12 +2,26 @@ cmd
 npm install
 composer install
 
-php artisan migrate --seed
+
 php artisan storage:link
 
 copy .env.example .env
+
+//if sqlite gagamitin mo
+New-Item -Path database/database.sqlite -ItemType File; php artisan migrate
+
+//if mysql rename mo nalang sa .env file
+php artisan migrate --seed
 npm install react-easy-crop chart.js react-chartjs-2 date-fns
 npm run dev
+
+php artisan serve
+
+config the cors file in config/cors.php
+'allowed_origins' => ['*'],  // or specifically 'http://localhost:5173'
+'allowed_methods' => ['*'],
+'allowed_headers' => ['*'],
+
 
 in .env file:
 VITE_API_BASE_URL=http://127.0.0.1:8000/api
