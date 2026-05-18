@@ -1,4 +1,11 @@
 cmd
+npm install
+composer install
+
+php artisan migrate --seed
+php artisan storage:link
+
+copy .env.example .env
 npm install react-easy-crop chart.js react-chartjs-2 date-fns
 npm run dev
 
